@@ -58,8 +58,8 @@ matrix:
           packages:
             - clang-5.0
             - clang-format-5.0  # for style checks
-            - g++-multilib
-            - gcc-multilib
+            - g++
+            - gcc
             - libc6-dev-i386
             - libc6-dev:i386
             - linux-libc-dev
