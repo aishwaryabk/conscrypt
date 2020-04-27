@@ -24,9 +24,9 @@ matrix:
       env:
         - ANDROID_TOOLS_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip"
         - ANDROID_HOME="$HOME/android-sdk-linux"
-        - JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-        - JAVA7_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-        - JAVA11_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+        - JAVA_HOME=/usr/lib/jvm/java-8-openjdk-ppc64el
+        - JAVA7_HOME=/usr/lib/jvm/java-7-openjdk-ppc64el
+        - JAVA11_HOME=/usr/lib/jvm/java-11-openjdk-ppc64el
         - CC=clang-5.0
         - CXX=clang++-5.0
         - PATH="$JAVA_HOME/bin:$PATH"
