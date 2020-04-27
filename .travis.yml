@@ -1,5 +1,4 @@
 language: minimal
-os: linux
 arch: ppc64le
 
 env:
@@ -31,6 +30,7 @@ matrix:
         - CXX=clang++-5.0
         - PATH="$JAVA_HOME/bin:$PATH"
         - TERM=dumb # to stop verbose build output
+        - GIMME_GO_VERSION=1.13
 
       before_install:
         - curl -L $ANDROID_TOOLS_URL -o $HOME/tools.zip
