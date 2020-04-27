@@ -61,6 +61,7 @@ matrix:
             - g++
             - gcc
             - libc6-dev
+            - unzip
             - linux-libc-dev
             - ninja-build
             - openjdk-7-jre # for running tests with Java 7
