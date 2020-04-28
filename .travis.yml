@@ -35,6 +35,8 @@ matrix:
       before_install:
         - curl -L $ANDROID_TOOLS_URL -o $HOME/tools.zip
         - unzip -q $HOME/tools.zip -d $ANDROID_HOME
+        - curl -sL -o ~/bin/gimme https://raw.githubusercontent.com/travis-ci/gimme/master/gimme
+        - chmod +x ~/bin/gimme
         # Accept all the license agreements
         - yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses
         # sdkmanager 26.1.1 produces an enormous amount of progress info
