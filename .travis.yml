@@ -50,7 +50,8 @@ matrix:
         - $ANDROID_HOME/tools/bin/sdkmanager 'cmake;3.10.2.4988404' | tr '\r' '\n' | uniq
         - gimme 1.13 # Needed for BoringSSL build
         - source ~/.gimme/envs/go1.13.env
-        - cd /conscrypt && cat conscrypt.patch | patch -p1
+        - cd / && ls 
+        - find / -name conscrypt
 
       addons:
         apt:
