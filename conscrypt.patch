@@ -110,7 +110,7 @@ index 63fc3f5..ad073f7 100644
 +                            Arrays.asList(referenceEngine.getEnabledCipherSuites());
 +                        assertTrue(enabledSuites.contains(sessionSuite));                       
                          assertNotNull(session.getLocalCertificates());
-+
+                         
                          assertEquals("CN=localhost",
                              ((X509Certificate) session.getLocalCertificates()[0])
                                  .getSubjectDN().getName());
@@ -138,12 +138,12 @@ index 72bc79e..630be3e 100644
                          // should have been delivered
 -                        assertEquals(referenceClientSocket.getEnabledCipherSuites()[0],
 -                            session.getCipherSuite());
-+                        
+
 +                        String sessionSuite = session.getCipherSuite();
 +                        List<String> enabledSuites =
 +                            Arrays.asList(referenceClientSocket.getEnabledCipherSuites());
 +                        assertTrue(enabledSuites.contains(sessionSuite));
-+			
+
                          assertNotNull(session.getLocalCertificates());
                          assertEquals("CN=localhost",
                              ((X509Certificate) session.getLocalCertificates()[0])
