@@ -108,7 +108,8 @@ index 63fc3f5..ad073f7 100644
 +			String sessionSuite = session.getCipherSuite();
 +                        List<String> enabledSuites =
 +                            Arrays.asList(referenceEngine.getEnabledCipherSuites());
-+                        assertTrue(enabledSuites.contains(sessionSuite));                       
++                        assertTrue(enabledSuites.contains(sessionSuite));   
+
                          assertNotNull(session.getLocalCertificates());
                          
                          assertEquals("CN=localhost",
